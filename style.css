@@ -8,6 +8,11 @@
 /* Typo */
 
 @import url("https://fonts.cdnfonts.com/css/filson-pro");
+
+a h1 h2 h3 h4 h5 p {
+  font-family: "Filson Pro", sans-serif;
+}
+
 a {
   color: #03045e;
   font-family: "Filson Pro", sans-serif;
@@ -46,7 +51,7 @@ h4 {
 
 h5 {
   font-family: "Filson Pro", sans-serif;
-  color: #0077B6;
+  color: #0077b6;
   font-size: 20px;
   font-weight: 300;
 }
@@ -64,85 +69,7 @@ p {
   font-weight: 300;
 }
 
-.row {
-  padding-top: 90px;
-  flex-direction: row;
-}
-
-.center {
-  text-align: center;
-}
-
-.paragraph {
-  padding-top: 20px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 200;
-}
-
-/* COLUMNS */
-
-.col-hero {
-
-    padding: 250px 80px 0px 130px;
-    position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 200px;
-  background-color:#ccff00;
-}
-
-/* CTA */
-
-.button-wrapper {
-  display: flex;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.button {
-  display: inline-block;
-  justify-content: center;
-  padding: 0.5em 1.2em;
-  width: auto;
-  background: #caf0f8;
-  color: #000;
-  font-weight: 500;
-  font-size: 1em;
-  border-radius: 20px;
-  text-decoration: none;
-  border: none;
-}
-
-.button:hover {
-  background: #fff;
-  border-color: #0066b6;
-  border-style: solid;
-}
-
-.solid {
-  border-bottom: 5px solid #00b4d8;
-  width: 90px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Navbar */
+/* NAVBAR */
 #navbar {
   position: fixed;
   top: 0;
@@ -167,8 +94,9 @@ div.sticky {
   margin-left: 130px;
 }
 .menu {
-  margin-right: 100px;
+  margin-right: 130px;
 }
+
 #navbar ul {
   display: flex;
   float: right;
@@ -193,7 +121,7 @@ div.sticky {
   color: #000;
   display: block;
   font-size: 0.7em;
-  height: 50px;
+  height: 0px;
   letter-spacing: 1px;
   margin: 0 20px;
   padding: 0 4px;
@@ -206,23 +134,129 @@ div.sticky {
   color: #2fa1db;
 }
 
+/* COMMON LAYOUT */
+.raw {
+  padding-top: 90px;
+  flex-direction: row;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+.center {
+  text-align: center;
+}
+
+.paragraph {
+  padding-top: 20px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.column3 {
+  float: left;
+  width: 30%;
+  text-align:center;
+}
+
+.solid {
+  border-bottom: 5px solid #00b4d8;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.raw:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.subtitle {
+  margin: 0% 32%;
+}
+
+
+/* HERO */
+.col-hero {
+  padding: 250px 80px 0px 130px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 200px;
+  background-color: none;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 200;
+}
+
+/* CTA HERO */
+.button-wrapper {
+  display: flex;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  justify-content: center;
+  padding: 0.5em 1.2em;
+  width: auto;
+  background: #caf0f8;
+  color: #000;
+  font-weight: 500;
+  font-size: 1em;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0);
+  border-color: #0066b6;
+  border-style: solid;
+  border-width: 2px;
+}
+
+/* THE BEAST */
+
+.beast {
+  padding-top: 50px;
+}
+
+.beastimg {
+  padding:90px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ONE MORE TIME */
+
+.i {
+  margin:20px 0px;
+}
+
+/* WATCH CAREFULLY */
+
+.wc {
+  margin:90px;
+  background-color: #b2d6e9;
+}
+
+/* PRODUCTS */
+
 /* blue text */
 .blue {
   color: #2fa1db;
-}
-
-/* FOOTER */
-.bg-footer {
-  background-color: #555555;
-  padding: 15px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  color: #fff;
-  border: 0;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
 }
 
 .column3 {
@@ -230,6 +264,64 @@ div.sticky {
   width: 33%;
 }
 
-.wc {
+
+/* PRE-ORDER */
+
+.shell {
   color: #f7fbfd;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.container {
+  padding: 11px 5px;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.watch-sub {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.price {
+  padding-top: 15px;
+  color: #fc8211;
+}
+
+.button-wrapper2 {
+  display: flex;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.button2 {
+  display: inline-block;
+  justify-content: center;
+  padding: 0.5em 1em;
+  width: auto;
+  font-weight: 500;
+  font-size: 0.6em;
+  border-radius: 20px;
+  text-decoration: none;
+  border: solid;
+  border-width: 1px;
+  border-color: #6f788a;
+  text-align: center;
+}
+
+.col-prod {
+  float: left;
+  width: 15%;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
